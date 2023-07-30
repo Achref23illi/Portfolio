@@ -407,7 +407,6 @@ span{
         *{
             width: 100%;
             font-size: calc(var(--base-font-size) * 0.8);
-            border:  1px solid red;
 
         }
         .header{
