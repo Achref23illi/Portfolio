@@ -250,6 +250,24 @@ span{
     width: 400px;
     height: 100px;
 }
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3332BB;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    width: 80px;
+}
+.scroll-to-top img {
+    color: #F9F9F9;
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1200px){
     :root{
@@ -305,25 +323,6 @@ span{
     .section-3{
         margin-top: 1100px;
     }
-}
-
-.scroll-to-top {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #3332BB;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    width: 80px;
-}
-.scroll-to-top img {
-    color: #F9F9F9;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -396,6 +395,9 @@ span{
     .review{
         width: 80%;
     }
+    .scroll-to-top {
+        width: 60px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -405,6 +407,7 @@ span{
         *{
             width: 100%;
             font-size: calc(var(--base-font-size) * 0.8);
+            border:  1px solid red;
 
         }
         .header{
@@ -420,6 +423,7 @@ span{
         .images{
             grid-template-columns: repeat(1,1fr);
             grid-gap: 10px;
+            width: auto;
         }
         
         .section-2{
@@ -446,9 +450,9 @@ span{
             height: auto;
         }
         .info{
-            width: 500px;
+            width: 300px;
             height: 1500px;
-            margin-top: 150px;
+            margin-top: 200px;
         }
     
         .h1-5,span{
@@ -474,6 +478,12 @@ span{
             width: auto;
         }
         .h1-2{
+            width: auto;
+        }
+        .scroll-to-top {
+            width: 40px;
+        }
+        .h1-3{
             width: auto;
         }
 }
